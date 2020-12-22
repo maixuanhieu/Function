@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="text">
+    <input type="button" value="Tìm kiếm" onclick="search()">
+    <script>
+        let ngoisao = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        let chomsao = ['Ursa Minor','Taurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+        function search() {
+            var translate = (document.getElementById("text").value);
+            for (i = 0; i < ngoisao.length; i++) {
+                if (ngoisao[i] == translate) {
+                    alert("Thuộc chòm " + chomsao[i]);
+                    return;
+                }
+            }
+            alert('Không có từ phù hợp');
+
+        }
+    </script>
+</body>
+</html>
