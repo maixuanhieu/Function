@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kiểm tra ký tự truyền vào mảng</title>
 </head>
+
 <body>
-    
+    <script>
+        var arr = ['a', 'd', 'a', 'j', 's', 'd', 'h', 'a', 'j', 's', 'k', 'd', 'b'];
+        var arr2 = "b";
+        function check(arr) {
+            var arr3 = new Array;
+            for (i = 0; i < arr.length; i++) {
+                if (arr[i] == arr2) {
+                    arr3.push(arr[i])
+                }
+            }
+            return arr3;
+        }
+        function count() {
+            let arr3 = check(arr);
+            let b = arr3.length;
+            if (b != 0) {
+                document.write(b);
+                return;
+            }
+            document.write("-1");
+        }
+        count();
+    </script>
 </body>
+
 </html>
