@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hàm đảo ngược mảng số nguyên</title>
+</head>
+
+<body>
+    <script>
+        let a = [3, 5, 7, 8];
+        
+        function reverseArr(a) {
+            var ret = new Array;
+            for (var i = a.length - 1; i >= 0; i--) {
+                ret.push(a[i]);
+            }
+            return ret;
+        }
+        let result = reverseArr(a);
+        document.write("Mảng mới là: " + result);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hàm kiểm tra số đó phải số nguyên dương</title>
+</head>
+
+<body>
+    <script>
+        let n = parseInt(prompt("Nhập vào một ký tự: "))
+        let a = true;
+        function kiemtra() {
+
+            if (n === Number(n) && n > 0) {
+                a = true;
+                return a;
+            } else {
+                a = false;
+                return a;
+            }
+        }
+        let result = kiemtra();
+        if (a == true) {
+            alert("True");
+        } else {
+            alert("False");
+        }
+    </script>
+</body>
+
+</html>

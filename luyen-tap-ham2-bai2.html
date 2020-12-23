@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hàm diện tích và hàm chu vi</title>
+</head>
+<body>
+    <script>
+        let r = parseInt(prompt("Nhập vào độ dài của bán kính hình tròn: "));
+        function dientich(){
+            let S
+            S = r * r * 3.14;
+            return S;
+        }
+        let result = dientich();
+        alert("Diện tích của hình tròn là: " + result);
+
+        function chuvi(){
+            let P
+            P = r * 2 * 3.14;
+            return P;
+        }
+        let result1 = chuvi();
+        alert("Chu vi của hình tròn là: " + result1);
+    </script>
+</body>
+</html>

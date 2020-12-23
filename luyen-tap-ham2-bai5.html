@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hàm số nhỏ nhất trong ba số</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("Nhập vào số thứ nhất: "));
+        let b = parseInt(prompt("Nhập vào số thứ hai: "));
+        let c = parseInt(prompt("Nhập vào số thứ ba: "));
+        function kiemtra(){
+        let max = a;
+        if (b > max && b > c){
+            max = b;
+            return max;
+        } else (c > max); {
+            max = c;
+            return max;
+        }
+        }
+        let result = kiemtra();
+        alert("Số lớn nhất trong ba số là: " + result);
+    </script>
+</body>
+</html>
